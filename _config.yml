@@ -1,0 +1,4 @@
+# 360Comm — GitHub Pages (Jekyll) configuration
+title: 360Comm
+description: Compare business phone, VoIP, video & contact-center platforms.
+exclude: [README.md, BUILD-PROMPT.md, src, dist, Gemfile, Gemfile.lock]

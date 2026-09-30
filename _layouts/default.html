@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ page.canonical }}">
+<meta name="theme-color" content="#0b1b3f">
+<meta property="og:type" content="website"><meta property="og:site_name" content="360Comm"><meta property="og:title" content="{{ page.title | escape }}"><meta property="og:description" content="{{ page.description | escape }}"><meta property="og:url" content="{{ page.canonical }}"><meta property="og:image" content="https://webworksa1.github.io/360comm-com/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ page.root }}assets/img/icon.svg" type="image/svg+xml"><link rel="manifest" href="{{ page.root }}manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.root }}assets/css/style.css">
+<script>try{var t=localStorage.getItem('c360-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{{ page.ld }}</script>
+{{ page.extra_head }}
+</head><body data-root="{{ page.root }}" {{ page.body_attr }}>
+{% include header.html %}
+<main id="main">
+{{ content }}
+</main>
+{% include footer.html %}
+<script src="{{ page.root }}assets/js/main.js" defer></script>
+</body></html>
