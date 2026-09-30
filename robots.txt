@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Sitemap: https://webworksa1.github.io/360comm-com/sitemap.xml

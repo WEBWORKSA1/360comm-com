@@ -1,0 +1,13 @@
+---
+layout: "default"
+title: "Sitemap | 360Comm"
+stitle: "Sitemap"
+kw: ""
+description: "All pages on 360Comm."
+canonical: "https://webworksa1.github.io/360comm-com/sitemap.html"
+root: ""
+ld: "[{\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"360Comm\", \"url\": \"https://webworksa1.github.io/360comm-com/\", \"logo\": \"https://webworksa1.github.io/360comm-com/assets/img/icon.svg\"}]"
+noindex: true
+---
+<section class="page-hero"><div class="container"><h1>Sitemap</h1><p>Every page on the site.</p></div></section>
+<section><div class="container prose"><ul style="columns:2">{% assign ps = site.pages | sort: "url" %}{% for p in ps %}{% if p.canonical and p.noindex != true %}<li><a href="{{ p.url | remove_first: '/' | default: 'index.html' }}">{{ p.stitle }}</a></li>{% endif %}{% endfor %}</ul></div></section>
